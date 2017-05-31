@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/setting_item_ll_parent_style"
+        android:background="@color/white">
+
+        <ImageView
+            style="@style/setting_item_left_right_image_style"
+            android:src="@mipmap/setting_warn" />
+
+        <TextView
+            style="@style/setting_item_middle_text_style"
+            android:text="通知报警" />
+
+        <ImageView
+            android:id="@+id/iv_setting_switch"
+            style="@style/setting_item_left_right_image_style"
+            android:src="@mipmap/setting_switch_close" />
+    </LinearLayout>
+
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/thin_gray" />
+
+     <LinearLayout
+         android:id="@+id/ll_setting_about_us"
+         style="@style/setting_item_ll_parent_style"
+         android:background="@drawable/selector_main_bottom_item_background">
+
+         <ImageView
+             style="@style/setting_item_left_right_image_style"
+             android:src="@mipmap/setting_about_us" />
+
+         <TextView
+             style="@style/setting_item_middle_text_style"
+             android:text="关于我们" />
+
+         <ImageView
+             style="@style/setting_item_left_right_image_style"
+             android:src="@mipmap/setting_to_right" />
+     </LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/thin_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_setting_version_information"
+        style="@style/setting_item_ll_parent_style"
+        android:background="@drawable/selector_main_bottom_item_background">
+
+        <ImageView
+            style="@style/setting_item_left_right_image_style"
+            android:src="@mipmap/setting_version_information" />
+
+        <TextView
+            style="@style/setting_item_middle_text_style"
+            android:text="版本信息" />
+
+        <ImageView
+            style="@style/setting_item_left_right_image_style"
+            android:src="@mipmap/setting_to_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/thin_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_setting_video_config"
+        style="@style/setting_item_ll_parent_style"
+        android:background="@drawable/selector_main_bottom_item_background">
+
+        <ImageView
+            style="@style/setting_item_left_right_image_style"
+            android:src="@mipmap/setting_video_config" />
+
+        <TextView
+            style="@style/setting_item_middle_text_style"
+            android:text="监控参数" />
+
+        <ImageView
+            style="@style/setting_item_left_right_image_style"
+            android:src="@mipmap/setting_to_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/thin_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bt_setting_logout"
+            style="@style/login_in_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_setting_button"
+            android:text="注销帐号"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

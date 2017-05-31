@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/dark_blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tab_no_sure"
+                style="@style/TabsPublicStyle"
+                android:layout_marginLeft="@dimen/tap_far_left_right_two"
+                android:layout_marginRight="@dimen/tap_middle_two"
+                android:background="@drawable/shape_select_tap_background_white"
+                android:text="未确认"
+                android:textColor="@color/thin_blue" />
+
+            <TextView
+                android:id="@+id/tv_tab_already_sure"
+                style="@style/TabsPublicStyle"
+                android:layout_marginLeft="@dimen/tap_middle_two"
+                android:layout_marginRight="@dimen/tap_far_left_right_two"
+                android:background="@drawable/shape_select_tap_background_blue"
+                android:text="已确认"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_select_sure_or_no"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.47"></FrameLayout>
+
+
+</LinearLayout>

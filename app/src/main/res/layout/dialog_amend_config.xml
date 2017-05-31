@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout style="@style/dialog_video_parent_style">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dialog_video_ip_address" />
+
+        <EditText
+            android:id="@+id/et_dialog_amend_config_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:hint="请输入IP地址"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/loading_background_thin_gray" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_video_parent_style">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dialog_video_user_name" />
+
+        <EditText
+            android:id="@+id/et_dialog_amend_config_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:hint="请输入帐户"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/loading_background_thin_gray" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/dialog_video_parent_style">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dialog_video_pass_word" />
+
+        <EditText
+            android:id="@+id/et_dialog_amend_config_pass_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:fontFamily="sans-serif"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/loading_background_thin_gray" />
+    </LinearLayout>
+</LinearLayout>

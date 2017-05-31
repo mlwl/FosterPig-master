@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minlu.fosterpig">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+
+    <!-- 视频权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WarnActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.VersionActivity" />
+        <activity
+            android:name=".activity.TrueTimeDataActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.VideoTwoListActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activity.LiveActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.VideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.NotificationToWarnActivity"
+            android:launchMode="singleTop" />
+
+        <service android:name=".activity.AlarmServicer" />
+        <receiver android:name=".receiver.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.alarm.receiver" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

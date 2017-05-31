@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="tap_far_left_right">10dp</dimen>
+    <dimen name="tap_middle">5dp</dimen>
+    <dimen name="tap_far_left_right_two">10dp</dimen>
+    <dimen name="tap_middle_two">5dp</dimen>
+    <dimen name="tap_text_padding">4dp</dimen>
+
+    <dimen name="login_top_logo_margin_top">15dp</dimen>
+    <dimen name="login_two_edit_text_margin">14dp</dimen>
+    <dimen name="login_bottom_text_margin_bottom">50dp</dimen>
+<!--    <dimen name="main_annulus_width">21dp</dimen>-->
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/video_list_loading"
+        layout="@layout/layout_loading"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/video_list_empty"
+        layout="@layout/layout_empty"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/video_list_error"
+        layout="@layout/layout_error"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/video_list_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+</FrameLayout>

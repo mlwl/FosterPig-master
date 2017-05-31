@@ -1,0 +1,112 @@
+{
+  "selectList": [
+    {
+      "areaName": "康乐畜牧",
+      "facilitySum": 0,
+      "facilityWarnNumber": 0,
+      "facilityDetails": []
+    },
+    {
+      "areaName": "东区",
+      "facilitySum": 0,
+      "facilityWarnNumber": 0,
+      "facilityDetails": []
+    },
+    {
+      "areaName": "西区",
+      "facilitySum": 11,
+      "facilityWarnNumber": 10,
+      "facilityDetails": [
+        {
+          "facilityType": 1,
+          "areaName": "西区",
+          "isWarn": 1,
+          "siteName": "1号站点2",
+          "dataValue": 0
+        },
+        {
+          "facilityType": 2,
+          "areaName": "西区",
+          "isWarn": 0,
+          "siteName": "1号站点2",
+          "dataValue": 17.83
+        },
+        {
+          "facilityType": 3,
+          "areaName": "西区",
+          "isWarn": 1,
+          "siteName": "1号站点2",
+          "dataValue": 52.08
+        },
+        {
+          "facilityType": 4,
+          "areaName": "西区",
+          "isWarn": 0,
+          "siteName": "1号站点2",
+          "dataValue": 1
+        },
+        {
+          "facilityType": 5,
+          "areaName": "西区",
+          "isWarn": 1,
+          "siteName": "1号站点2",
+          "dataValue": 0
+        },
+        {
+          "facilityType": 6,
+          "areaName": "西区",
+          "isWarn": 0,
+          "siteName": "1号站点2",
+          "dataValue": 1
+        },
+        {
+          "facilityType": 7,
+          "areaName": "西区",
+          "isWarn": 1,
+          "siteName": "1号站点2",
+          "dataValue": 1
+        },
+        {
+          "facilityType": 8,
+          "areaName": "西区",
+          "isWarn": 0,
+          "siteName": "1号站点2",
+          "dataValue": 0
+        },
+        {
+          "facilityType": 9,
+          "areaName": "西区",
+          "isWarn": 1,
+          "siteName": "1号站点2",
+          "dataValue": 0
+        },
+        {
+          "facilityType": 10,
+          "areaName": "西区",
+          "isWarn": 0,
+          "siteName": "1号站点2",
+          "dataValue": 0
+        },
+        {
+          "facilityType": 11,
+          "areaName": "西区",
+          "isWarn": 1,
+          "siteName": "1号站点2",
+          "dataValue": 0
+        }
+      ]
+    },
+    {
+      "areaName": "猪舍1",
+      "facilitySum": 0,
+      "facilityWarnNumber": 0,
+      "facilityDetails": []
+    },
+    {
+      "areaName": "猪舍2"
+    },
+    {
+      "areaName": "猪舍3"
+    }
+  ]
+}

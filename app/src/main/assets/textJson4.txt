@@ -1,0 +1,84 @@
+{
+    "hisAlamList": [
+        {
+            "alarmTime": "2016-12-05 14:06:50",
+            "areaName": "西区",
+            "confirm": 1,
+            "handleTime": "",
+            "information": "报警中",
+            "stationName": "1号站点",
+            "status": 1,
+            "type": 1,
+            "value": 25.5
+        },
+        {
+            "alarmTime": "2016-12-05 14:06:50",
+            "areaName": "西区",
+            "confirm": 1,
+            "handleTime": "",
+            "information": "报警中",
+            "stationName": "1号站点",
+            "status": 1,
+            "type": 2,
+            "value": 20.0
+        },
+        {
+            "alarmTime": "2016-12-05 14:06:50",
+            "areaName": "西区",
+            "confirm": 1,
+            "handleTime": "",
+            "information": "报警中",
+            "stationName": "1号站点",
+            "status": 1,
+            "type": 3,
+            "value": 42.2
+        },
+        {
+            "alarmTime": "2016-12-05 14:06:50",
+            "areaName": "西区",
+            "confirm": 1,
+            "handleTime": "",
+            "information": "报警中",
+            "stationName": "1号站点",
+            "status": 1,
+            "type": 4,
+            "value": 0
+        },
+        {
+            "alarmTime": "2016-12-05 14:06:50",
+            "areaName": "西区",
+            "confirm": 1,
+            "handleTime": "",
+            "information": "报警中",
+            "stationName": "1号站点",
+            "status": 1,
+            "type": 5,
+            "value": 1
+        },
+        {
+            "alarmTime": "2016-12-05 14:06:50",
+            "areaName": "西区",
+            "confirm": 1,
+            "handleTime": "",
+            "information": "报警中",
+            "stationName": "1号站点",
+            "status": 1,
+            "type": 6,
+            "value": 0
+        },
+        {
+            "alarmTime": "2016-12-05 14:06:50",
+            "areaName": "西区",
+            "confirm": 1,
+            "handleTime": "",
+            "information": "报警中",
+            "stationName": "1号站点",
+            "status": 1,
+            "type": 7,
+            "value": 1
+        }
+    ],
+    "limit": 10,
+    "start": 0,
+    "totalCount": 7
+}

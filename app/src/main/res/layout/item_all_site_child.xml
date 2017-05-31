@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_all_site_child_item_left_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:src="@mipmap/test_item_image" />
+
+
+    <TextView
+        android:id="@+id/tv_all_site_child_monitor_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/iv_all_site_child_item_left_image"
+        android:text="#2猪舍安琪点"
+        android:textColor="@color/setting_gray_color"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/tv_all_site_child_monitor_warn_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="1000ppm"
+        android:textColor="@color/red"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/iv_all_site_child_power_supply_is_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/broken_link_warn"
+        android:visibility="gone" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_all_site_child_is_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/already_handle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:layout_below="@id/iv_all_site_child_item_left_image"
+        android:background="@color/thin_gray" />
+</RelativeLayout>

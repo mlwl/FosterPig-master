@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.84"
+        android:background="@mipmap/main_top_background"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/fl_safe_number_annulus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+
+            <com.minlu.fosterpig.customview.ColorfulRingProgressView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/color_ful_ring_progress_view"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:bgColor="@color/bu_ji_ge"
+                app:fgColorEnd="#ffffff"
+                app:fgColorStart="#ffffff"
+                app:percent="100"
+                app:startAngle="0"
+                app:strokeWidth="@dimen/main_annulus_width" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="安全指数"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="100分"
+                    android:textColor="#fff"
+                    android:textSize="34dp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_safe_process_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="点击安全指数,开始检测"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_item_ammonia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_bottom_item_background">
+
+            <LinearLayout
+                android:id="@+id/ll_item_ammonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ammonia_icon" />
+
+                <TextView
+                    android:id="@+id/tv_item_ammonia_monitor_number"
+                    style="@style/main_bottom_item_text_style"
+                    android:text="氨气[0]" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_ammonia_warn_number"
+                style="@style/main_bottom_item_red_round_style"
+                android:layout_alignTop="@id/ll_item_ammonia"
+                android:layout_toRightOf="@id/ll_item_ammonia"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tv_item_ammonia_already_warn_number"
+                style="@style/main_bottom_item_gray_round_style"
+                android:layout_alignTop="@id/ll_item_ammonia"
+                android:layout_toRightOf="@id/ll_item_ammonia"
+                android:text="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/thin_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_temperature"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_bottom_item_background">
+
+            <LinearLayout
+                android:id="@+id/ll_item_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/temperature_icon" />
+
+                <TextView
+                    android:id="@+id/tv_item_temperature_monitor_number"
+                    style="@style/main_bottom_item_text_style"
+                    android:text="温度[0]" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_temperature_warn_number"
+                style="@style/main_bottom_item_red_round_style"
+                android:layout_alignTop="@id/ll_item_temperature"
+                android:layout_toRightOf="@id/ll_item_temperature"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tv_item_temperature_already_warn_number"
+                style="@style/main_bottom_item_gray_round_style"
+                android:layout_alignTop="@id/ll_item_temperature"
+                android:layout_toRightOf="@id/ll_item_temperature"
+                android:text="1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/thin_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <RelativeLayout
+            android:id="@+id/rl_item_humidity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_bottom_item_background">
+
+            <LinearLayout
+                android:id="@+id/ll_item_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/humidity_icon" />
+
+                <TextView
+                    android:id="@+id/tv_item_humidity_monitor_number"
+                    style="@style/main_bottom_item_text_style"
+                    android:text="湿度[0]" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_humidity_warn_number"
+                style="@style/main_bottom_item_red_round_style"
+                android:layout_alignTop="@id/ll_item_humidity"
+                android:layout_toRightOf="@id/ll_item_humidity"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tv_item_humidity_already_warn_number"
+                style="@style/main_bottom_item_gray_round_style"
+                android:layout_alignTop="@id/ll_item_humidity"
+                android:layout_toRightOf="@id/ll_item_humidity"
+                android:text="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/thin_gray" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_power_supply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_bottom_item_background">
+
+            <LinearLayout
+                android:id="@+id/ll_item_power_supply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/power_supply_icon" />
+
+                <TextView
+                    android:id="@+id/tv_item_power_supply_monitor_number"
+                    style="@style/main_bottom_item_text_style"
+                    android:text="市电[0]" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_power_supply_warn_number"
+                style="@style/main_bottom_item_red_round_style"
+                android:layout_alignTop="@id/ll_item_power_supply"
+                android:layout_toRightOf="@id/ll_item_power_supply"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/tv_item_power_supply_already_warn_number"
+                style="@style/main_bottom_item_gray_round_style"
+                android:layout_alignTop="@id/ll_item_power_supply"
+                android:layout_toRightOf="@id/ll_item_power_supply"
+                android:text="1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
